@@ -43,20 +43,20 @@ pip install -r requirements.txt
 ```
 
 #### 4. Set up the keys in a .env file
-Firstly, create your OpenAI API key; you can do the same from here https://openai.com/ visit the website login/signup through your account, then select API option. After that you'll be redirected to the page where you can find ```API keys``` option on left navigation bar.
+Firstly, create your ```OpenAI API key```; you can do the same from here https://openai.com/ visit the website login/signup through your account, then select API option. After that you'll be redirected to the page where you can find ```API keys``` option on left navigation bar.
 
-Now, create a ```.env``` file in the root directory. Inside the file, add you OpenAI API key:
+Now, create a ```.env``` file in the root directory. Inside the file, add you ```OpenAI API key```:
 ```powershell
 OPENAI_API_KEY="your_api_key_here"
 ```  
 
-Save the file and close it. In your Python script or Jupyter notebook, load the .env file using the following code:
+Save the file and close it. In your Python script or Jupyter notebook, load the ```.env``` file using the following code:
 ```powershell
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 ```
 
-When needed, you can access the OPENAI_API_KEY as an environment variable:
+When needed, you can access the ```OPENAI_API_KEY``` as an environment variable:
 ```powershell
 import os
 openai_api_key = os.environ['OPENAI_API_KEY']
